@@ -1,0 +1,19 @@
+[package]
+name = "romeo"
+version = "0.1.0"
+authors = ["Adam Spofford <pieflavor.mc@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serenity = "0.5"
+typemap = "0.3"
+csv = "1.0"
+serde_derive = "1.0"
+serde = "1.0"
+toml = "0.4"
+rand = "0.5"
+clippy = { version = "0.0", optional = true }
+smallvec = { version = "0.6", features = ["union"] }
+
+[features]
+cargo-check = ["clippy"]
